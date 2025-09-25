@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareerCompass - Counseling</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Nunito:wght@400;600;700&family=Kalam:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="text-gray-800">
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="max-w-7xl mx-auto px-4 base:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-full pt-4">
+                <div class="flex items-center">
+                    <a href="index.html" class="font-handwriting text-4xl flex items-center">
+                        CareerCompass
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-4">
+                    <a href="index.html" class="px-3 py-2 rounded-md text-base font-medium">Recommender</a>
+                    <a href="jobs.html" class="px-3 py-2 rounded-md text-base font-medium">All Jobs</a>
+                    <a href="resources.html" class="px-3 py-2 rounded-md text-base font-medium">Resources</a>
+                    <a href="quiz.html" class="px-3 py-2 rounded-md text-base font-medium">Personality Quiz</a>
+                    <a href="about.html" class="px-3 py-2 rounded-md text-base font-medium">About Us</a>
+                    <a href="counseling.html" class="px-3 py-2 rounded-md text-base font-medium">Book Counseling</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main class="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
+        <div id="counseling-view" class="view">
+            <div class="scrapbook-card p-8 rounded-2xl max-w-3xl mx-auto text-center rotate-neg-1">
+                <h1 class="font-handwriting text-5xl md:text-6xl text-gray-900">Need to Talk?</h1>
+                <p class="mt-4 text-gray-600">Sometimes you just need to chat with a real person. Click the button below, and we'll reach out to schedule a one-on-one session to help you untangle your career thoughts.</p>
+                <button id="book-counseling-btn" class="mt-8 image-btn">Book a Free Session</button>
+            </div>
+        </div>
+    </main>
+    
+    <!-- Modal -->
+    <div id="counseling-modal" class="modal-overlay hidden">
+        <div class="modal-content scrapbook-card bg-sky-100 text-sky-800 text-center">
+            <h3 class="font-handwriting text-4xl mb-2">You're all set!</h3>
+            <p class="mb-4">Your counseling request has been received. We'll be in touch via email within 48 hours to schedule your session. Hang tight!</p>
+            <button id="close-counseling-btn" class="bg-sky-500 text-white font-bold py-2 px-4 rounded-lg">Awesome!</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,194 @@
+/* --- Autumn Scrapbook Theme --- */
+
+/* --- 1. Base & Typography --- */
+body {
+    background-color: #eee2d8; 
+    background-image: radial-gradient(circle at 50% -20%, rgba(220, 131, 90, 0.25), transparent 50%);
+    background-repeat: no-repeat;
+    color: #40262b; 
+    font-family: 'Nunito', sans-serif;
+}
+
+.font-handwriting {
+    font-family: 'Kalam', 'Gochi Hand', cursive;
+    color: #291d1d; 
+}
+
+a {
+    transition: color 0.2s ease-in-out;
+}
+
+/* --- 2. Navigation Bar --- */
+nav {
+    /* UPDATED: New reddish-brown color and INCREASED height */
+    background-color: #8a3c2f;
+    height: 70px; /* Increased from 64px */
+    
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(238, 226, 216, 0.2);
+    box-shadow: 
+        0 0 12px 3px rgba(220, 131, 90, 0.3),
+        4px 4px 12px rgba(41, 29, 29, 0.1);
+    transition: all 0.2s ease-in-out;
+}
+
+nav a {
+    color: #ffffff;
+}
+
+nav a:hover {
+    color: #ffffff; 
+}
+
+nav .font-handwriting {
+    color: #ffffff;
+}
+
+/* --- 3. Core Components --- */
+.scrapbook-card {
+    background-color: #ffffff; 
+    border-radius: 8px;
+    border: 1px solid rgba(64, 38, 43, 0.05);
+    box-shadow: 
+        0 0 12px 3px rgba(220, 131, 90, 0.3),
+        4px 4px 12px rgba(41, 29, 29, 0.1);
+    transition: all 0.3s ease;
+}
+
+.scrapbook-card:hover {
+     box-shadow: 
+        0 0 20px 6px rgba(220, 131, 90, 0.45),
+        6px 6px 16px rgba(41, 29, 29, 0.15);
+     transform: translateY(-4px);
+}
+
+.scrapbook-card input,
+.scrapbook-card select,
+.scrapbook-card label {
+    font-family: 'Nunito', sans-serif;
+    color: #40262b;
+}
+
+
+.button-primary {
+    background-color: #c4593b;
+    color: #ffffff;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 2px 2px 8px rgba(41, 29, 29, 0.2);
+    transition: all 0.2s ease-in-out;
+}
+
+.button-primary:hover {
+    cursor: pointer;
+    background-color: #dc835a;
+    transform: scale(1.05);
+}
+
+/* --- 4. Page-Specific Tweaks --- */
+.step-icon {
+    border: 4px solid #ffffff;
+}
+.step-connector {
+    width: 3px;
+    background-color: rgba(64, 38, 43, 0.15);
+    height: 100%;
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 0;
+}
+
+.step-icon.color-1 { background-color: #c4593b; }
+.step-icon.color-2 { background-color: #dc835a; }
+.step-icon.color-3 { background-color: #a34a38; }
+.step-icon.color-4 { background-color: #40262b; }
+.step-icon.color-5 { background-color: #7a5e63; }
+
+.resource-card {
+     background-color: rgba(220, 131, 90, 0.1);
+     border: 1px solid rgba(220, 131, 90, 0.2);
+}
+.resource-card:hover {
+    background-color: rgba(220, 131, 90, 0.2);
+}
+.resource-card h4 {
+    color: #c4593b;
+}
+
+.quiz-answer:has(input:checked) {
+    background-color: rgba(220, 131, 90, 0.15);
+    border-color: #dc835a;
+}
+.quiz-strengths li {
+    background-color: rgba(196, 89, 59, 0.2);
+    color: #c4593b;
+    font-weight: bold;
+}
+
+/* --- 5. Modal Pop-ups --- */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(41, 29, 29, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+}
+.modal-content {
+    padding: 2rem;
+    max-width: 500px;
+    width: 90%;
+}
+
+/* --- General Rotations --- */
+.rotate-1 { transform: rotate(1deg); }
+.rotate-neg-1 { transform: rotate(-1deg); }
+.rotate-2 { transform: rotate(2deg); }
+.rotate-neg-2 { transform: rotate(-2deg); }
+
+
+
+
+
+
+/* --- Image-Based Sticky Note Button --- */
+.image-btn {
+    /* The URL to your sticky note image */
+    background-image: url('button.png'); 
+    
+    /* Makes the image fill the entire button */
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+
+    /* Remove default button appearance */
+    background-color: transparent;
+    border: none;
+
+    /* You MUST set a width and height for the image to show up */
+    width: 250px;
+    height: 110px;
+
+
+    /* Styling for the text on top of the image */
+    font-family: 'Gochi Hand', cursive;
+    font-size: 1.20rem;
+    color: #060606;
+    
+    /* Smooth transition for the hover effect */
+    transition: transform 0.2s ease-in-out;
+}
+
+.image-btn:hover {
+    cursor: pointer;
+    transform: scale(1.1); /* Gets slightly bigger on hover */
+}

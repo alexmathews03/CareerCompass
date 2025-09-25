@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareerCompass - Recommender</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Nunito:wght@400;600;700&family=Kalam:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="max-w-7xl mx-auto px-4 base:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-full pt-4">
+                <div class="flex items-center">
+                    <a href="index.html" class="font-handwriting text-4xl flex items-center">
+                        CareerCompass
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-4">
+                    <a href="index.html" class="px-3 py-2 rounded-md text-base font-medium">Recommender</a>
+                    <a href="jobs.html" class="px-3 py-2 rounded-md text-base font-medium">All Jobs</a>
+                    <a href="resources.html" class="px-3 py-2 rounded-md text-base font-medium">Resources</a>
+                    <a href="quiz.html" class="px-3 py-2 rounded-md text-base font-medium">Personality Quiz</a>
+                    <a href="about.html" class="px-3 py-2 rounded-md text-base font-medium">About Us</a>
+                    <a href="counseling.html" class="px-3 py-2 rounded-md text-base font-medium">Book Counseling</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main class="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
+        <!-- UPDATED: Grid changed to make form larger and shifted left -->
+        <div class="grid lg:grid-cols-12 gap-12 items-center min-h-[70vh]">
+            
+            <!-- Left Column: Asymmetrical Text Content -->
+            <div class="lg:col-span-5 text-center lg:text-left">
+                <h1 class="font-handwriting text-6xl md:text-7xl lg:text-8xl leading-tight rotate-neg-2">
+                    Your future is a blank page.
+                </h1>
+                <p class="mt-4 text-6xl font-handwriting text-[#c4593b] rotate-1">Let's start writing.</p>
+                <p class="mt-8 text-[#40262b] text-lg">Feeling a bit lost? Don't worry, we've all been there. Fill out this little note, and we'll point you towards some awesome paths you might love.</p>
+            </div>
+            <!-- Background Image -->
+                <!-- You can replace the src with your own image URL! --
+
+              
+              
+            <!-- Right Column: The Form Card -->
+            <div class="lg:col-span-7">
+                <form id="career-form" class="scrapbook-card p-8 md:p-12 rounded-2xl rotate-1">
+                    <h2 class="font-handwriting text-5xl text-center mb-8">Tell us about you!</h2>
+                    
+                    <div class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-base font-medium mb-1">Your Name</label>
+                            <input type="text" id="name" class="w-full px-4 py-2 bg-white/50 border border-stone-300 rounded-md focus:ring-[#dc835a] focus:border-[#dc835a]" placeholder="e.g., Alex Doe">
+                        </div>
+                        <div>
+                            <label for="college" class="block text-base font-medium mb-1">College / University</label>
+                            <input type="text" id="college" class="w-full px-4 py-2 bg-white/50 border border-stone-300 rounded-md focus:ring-[#dc835a] focus:border-[#dc835a]" placeholder="e.g., State University">
+                        </div>
+                        <div>
+                            <label for="studying-field" class="block text-base font-medium mb-1">Your Field of Study</label>
+                            <select id="studying-field" class="w-full px-4 py-2 bg-white/50 border border-stone-300 rounded-md focus:ring-[#dc835a] focus:border-[#dc835a]">
+                                <option value="">-- Select your field --</option>
+                                <option value="tech">Computer Science</option>
+                                <option value="networking">IT & Networking</option>
+                                <option value="product">Business & Management</option>
+                                <option value="design">Art & Design</option>
+                                <option value="marketing">Marketing & Communication</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="interest-field" class="block text-base font-medium mb-1">What's your main interest?</label>
+                            <select id="interest-field" class="w-full px-4 py-2 bg-white/50 border border-stone-300 rounded-md focus:ring-[#dc835a] focus:border-[#dc835a]">
+                                <option value="">-- Select a field --</option>
+                                <option value="tech">Computer Science & Tech</option>
+                                <option value="networking">Networking & Cybersecurity</option>
+                                <option value="product">Product Management</option>
+                                <option value="design">Fashion & Design</option>
+                                <option value="marketing">Digital Marketing</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-10">
+                        <button type="submit" class="w-full button-primary">Find My Path!</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </main>
+    
+    <!-- FOOTER REMOVED -->
+
+    <script src="script.js"></script>
+</body>
+</html>
+
